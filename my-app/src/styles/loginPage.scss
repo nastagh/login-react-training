@@ -1,7 +1,8 @@
 $pink: #d2418e;
 $blue: #0552c6;
+$grey: #e6e6e6;
+$greyDark: #686262;
 $border-radius: 5px;
-
 
 .main-container {
   min-width: 100vw;
@@ -13,13 +14,111 @@ $border-radius: 5px;
 }
 
 .login-container {
-  width: 320px;
+  width: 310px;
   height: 420px;
   background-color: white;
-  border: solid grey 1px;
+  border: solid $grey 2px;
   border-radius: $border-radius;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  align-items: center;
+  color: $greyDark;
 }
 
 .login-container__title{
   text-transform: uppercase;
+  color: black;
+}
+
+.login-container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.input-container_style {
+  background-color: $grey;
+  padding: 5px;
+
+  input {
+    background-color: $grey;
+    border: none;
+  }
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.agreements-container {
+  gap: 10px;
+  color: $greyDark;
+
+  input[type="checkbox"] {
+    accent-color: $pink;
+  }
+}
+
+.input-img {
+  width: 25px;
+  height: 25px;
+}
+
+.login-button {
+  justify-content: center;
+  align-items: center;
+  background-color: $pink;
+  margin: 25px;
+  padding: 10px 0;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  input {
+    border:none;
+    background-color: transparent;
+    height: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.login-bottom {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.alternative-text-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.alternative-text {
+  border: solid $greyDark 0.5px;
+  border-radius: $grey;
+  padding: 5px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.alternative-img{
+  width: 15px;
+}
+
+
+.sign-up-container{
+
+  a {
+    color: $greyDark;
+  }
 }
