@@ -1,0 +1,25 @@
+$pink: #d2418e;
+$blue: #0552c6;
+$border-radius: 5px;
+
+
+.main-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($pink,$blue);
+}
+
+.login-container {
+  width: 320px;
+  height: 420px;
+  background-color: white;
+  border: solid grey 1px;
+  border-radius: $border-radius;
+}
+
+.login-container__title{
+  text-transform: uppercase;
+}
