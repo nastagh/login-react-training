@@ -1,4 +1,5 @@
 import './App.scss';
+import './styles/fonts.scss';
 import LoginPage from 'pages/LoginPage';
 
 const App = ()=> {
